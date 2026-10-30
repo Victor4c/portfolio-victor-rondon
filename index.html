@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Gabriel de Sales Rondon — Portfólio</title>
+  <meta name="description" content="Portfólio de Victor Gabriel de Sales Rondon: Automação de Dados, Inteligência Comercial, Soluções com IA, Projetos e Certificações.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Navigation Minimal & Clean -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="brand-logo">
+        <span class="brand-dot"></span>
+        <span>Victor Rondon</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#certificados">Certificados</a></li>
+        <li><a href="#experiencia">Trajetória</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://www.linkedin.com/in/victor-gabriel-rondon-714840310" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container">
+      <h1 class="hero-title">
+        Soluções de <span class="highlight">Inteligência Artificial</span>, automação e análise de dados para problemas reais.
+      </h1>
+      <p class="hero-subtitle">
+        Graduando em Ciências Econômicas pela UFMT e Gerente Comercial na Fácil Consultoria. Desenvolvo pipelines de dados, sistemas de qualificação preditiva de leads, automações financeiras e interfaces web focadas em eficiência operacional.
+      </p>
+      
+      <div class="hero-cta">
+        <a href="#projetos" class="btn btn-primary">Explorar Projetos</a>
+        <a href="#certificados" class="btn btn-secondary">Ver Certificados (25)</a>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="metrics-grid" id="metrics-container">
+        <!-- Rendered via JS from PORTFOLIO_DATA.profile.metrics -->
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: Projetos -->
+  <section id="projetos" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Portfólio Técnico</div>
+        <h2 class="section-title">Projetos</h2>
+        <p class="section-desc">
+          Sistemas e ferramentas desenvolvidos para automatizar processos, estruturar dados e gerar impacto direto no negócio.
+        </p>
+      </div>
+
+      <div class="projects-grid" id="projects-container">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Certificados & Produção Científica -->
+  <section id="certificados" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Credenciais & Produção Acadêmica</div>
+        <h2 class="section-title">Certificados e Publicações</h2>
+        <p class="section-desc">
+          25 documentos oficiais divididos por área — artigos científicos, pesquisas, projetos de extensão, cursos e congressos.
+        </p>
+      </div>
+
+      <!-- Controls: Categorias e Busca -->
+      <div class="cert-controls">
+        <div class="cert-tabs" id="cert-tabs">
+          <!-- Rendered via JS -->
+        </div>
+
+        <div class="cert-search-wrapper">
+          <span class="cert-search-icon">⌕</span>
+          <input type="text" id="cert-search" class="cert-search-input" placeholder="Filtrar por tema, instituição ou palavra-chave...">
+        </div>
+      </div>
+
+      <!-- Certs Grid -->
+      <div class="certs-grid" id="certs-container">
+        <!-- Rendered dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Experiência & Liderança -->
+  <section id="experiencia" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Experiência</div>
+        <h2 class="section-title">Trajetória e Liderança</h2>
+        <p class="section-desc">
+          Atuação em gestão comercial, representação estudantil, monitoria acadêmica e grupos de pesquisa.
+        </p>
+      </div>
+
+      <div class="timeline-list" id="experience-container">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Contato -->
+  <footer id="contato" class="footer">
+    <div class="container">
+      <h3 class="footer-title">Vamos conversar?</h3>
+      <p class="footer-desc">
+        Aberto a oportunidades em <strong>AI Building, Automação Comercial, Dados e Planejamento Estratégico</strong>.
+      </p>
+      <div class="footer-actions">
+        <a href="https://www.linkedin.com/in/victor-gabriel-rondon-714840310" target="_blank" rel="noopener" class="btn btn-primary">
+          LinkedIn
+        </a>
+        <a href="http://lattes.cnpq.br/5620235852309381" target="_blank" rel="noopener" class="btn btn-secondary">
+          Currículo Lattes
+        </a>
+      </div>
+      <p class="footer-copy">
+        Victor Gabriel de Sales Rondon © 2026
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal Deep Dive de Projetos -->
+  <div class="modal-overlay" id="project-modal" onclick="closeModalOnBackdrop(event, 'project-modal')">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-project-title">Detalhes do Projeto</h3>
+        <button class="modal-close-btn" onclick="closeModal('project-modal')">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-project-body">
+        <!-- Preenchido via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Visualizador de Certificados (PDF / Imagem) -->
+  <div class="modal-overlay" id="cert-modal" onclick="closeModalOnBackdrop(event, 'cert-modal')">
+    <div class="modal-container" style="max-width: 960px;">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="modal-cert-title" style="font-size: 1.15rem;">Visualizar Certificado</h3>
+          <p id="modal-cert-sub" style="font-size: 0.825rem; color: var(--text-muted); margin-top: 0.15rem;"></p>
+        </div>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <a id="modal-cert-download" href="#" target="_blank" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">
+            Abrir Original ↗
+          </a>
+          <button class="modal-close-btn" onclick="closeModal('cert-modal')">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body" style="padding: 1rem; background: #070a12;">
+        <div id="modal-cert-content">
+          <!-- iframe ou img inserido via JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
