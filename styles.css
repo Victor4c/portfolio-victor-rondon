@@ -947,10 +947,35 @@ body {
 
 @media (max-width: 680px) {
   .hero-title {
-    font-size: 2.25rem;
+    font-size: 2.1rem;
+    line-height: 1.15;
+  }
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .nav-container {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
   .nav-links {
-    display: none;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 0.25rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-links a {
+    font-size: 0.85rem;
+    white-space: nowrap;
   }
   .metrics-grid, .certs-grid {
     grid-template-columns: 1fr;
@@ -961,5 +986,22 @@ body {
   }
   .cert-search-wrapper {
     width: 100%;
+  }
+  .filter-group {
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+  }
+  .filter-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .modal-dialog {
+    max-height: 94vh;
+    border-radius: var(--radius-md);
+  }
+  .modal-header, .modal-body {
+    padding: 1.25rem;
   }
 }
